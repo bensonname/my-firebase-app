@@ -1,0 +1,20 @@
+{
+  "name": "BENSONNAME-Sharonearth-Dev",
+  "version": "1.0.0",
+  "description": "Sharonearth",
+  "main": "index.js",
+  "scripts": {
+    "minify-hitungmundur": "html-minifier-terser --input-file hitungmundur.html --output-file hitungmundur.min.html --collapse-whitespace --minify-js --js-output-file hitungmundur.min.js",
+    "minify-index": "html-minifier-terser --input-file index.html --output-file index.min.html --collapse-whitespace",
+    "minify": "npm run minify-hitungmundur && npm run minify-index"
+  },
+  "keywords": [],
+  "author": "benson feri",
+  "license": "ISC",
+  "devDependencies": {
+    "html-minifier-terser": "^7.2.0"
+  },
+  "dependencies": {
+    "terser": "^5.39.0"
+  }
+}
